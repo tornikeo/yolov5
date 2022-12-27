@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/workdir
+      - /home/tornikeo/Documents/work/scalexa/atomic-arch-poly/store:/data
+    shm_size: 64g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

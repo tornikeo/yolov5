@@ -6,7 +6,9 @@ gitpython
 ipython  # interactive notebook
 matplotlib>=3.2.2
 numpy>=1.18.5
-opencv-python>=4.1.1
+# opencv-python>=4.1.1
+opencv-python==4.5.5.64
+opencv-python-headless==4.5.5.64
 Pillow>=7.1.2
 psutil  # system resources
 PyYAML>=5.3.1
@@ -39,11 +41,11 @@ seaborn>=0.11.0
 # openvino-dev  # OpenVINO export
 
 # Deploy ----------------------------------------------------------------------
-# tritonclient[all]~=2.24.0
+tritonclient[all]~=2.24.0
 
 # Extras ----------------------------------------------------------------------
-# mss  # screenshots
-# albumentations>=1.0.3
-# pycocotools>=2.0  # COCO mAP
-# roboflow
-# ultralytics  # HUB https://hub.ultralytics.com
+mss  # screenshots
+albumentations>=1.0.3
+pycocotools>=2.0  # COCO mAP
+roboflow
+ultralytics  # HUB https://hub.ultralytics.com

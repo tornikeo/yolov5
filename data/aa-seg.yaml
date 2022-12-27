@@ -1,0 +1,24 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128-seg dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128-seg  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /data/DL_2DMaterials/Dataset_DL_2DMaterials/Graphene   # dataset root dir
+# NOTE It is required to have '/image/' at the start of the train val and test paths. Otherwise the labels dir will be not detected
+train: images/train2019  # train images (relative to 'path') 128 images
+val: images/val2019  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: monographene
+  1: fewgrapene
+  2: thickgraphene
+
+# Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128-seg.zip
